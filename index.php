@@ -62,6 +62,11 @@
             <li class="lista">
                 Só quer mandar a mesagem e não deseja salvar o numero em seus contatos no celular.
             </li>
+            <h4 class="h4-title">
+                <p class="h4-title">
+                    Apenas coloque o DDD e o número do telefone e já pode começar a conversar!
+                </p>
+            </h4>
         </ul>
     </div>
     </div>
@@ -69,7 +74,7 @@
     <form method="post" id= "formulario" class="form">
         <div class="form_box">
             <div class="div_phone">
-                <input type="text" name="phone_number" id="phone_number" placeholder="Número a ser enviado"><br>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="(00) 0000-0000"><br>
             </div>
             <div class="div_submit">
                 <input type="submit" id="submit">
@@ -83,30 +88,18 @@
         
         if(array_key_exists("phone_number", $_POST)) 
         {
-        $cellphone =  $_POST["phone_number"];
-        $ddd = $_POST["DDD"];
-        $country_number =  $_POST["country_number"];
-
+        $a =  $_POST["phone_number"];
+        $arr = array('/\(|\)/','/\.|\-/');
+        $cellphone = preg_replace($arr, "", $a);
         if(empty($cellphone))
         {
-            
         echo '<p class="err_text">o número de telefone não pode estar vazio!</p>';
         }
-        
-        elseif(empty($country_number))
-        {
-        echo '<p class="err_text">o número do país não pode estar vazio!</p>';
-        }
-        
-        elseif(empty($ddd))
-        {
-        echo '<p class="err_text">o número do DDD não pode estar vazio!</p>';
-        }
-
+      
         else
         {   
             $message = "&text=Olá estou usando o Whatsapp";
-            $link = "{$whats}+{$country_number}{$ddd}{$cellphone}{$message}";
+            $link = "{$whats}+55{$cellphone}{$message}";
             echo $link;
             header("Location: $link");
             exit();

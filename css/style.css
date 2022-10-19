@@ -34,7 +34,7 @@
     margin-left: auto;
     box-sizing: border-box;
     margin-bottom: 5rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 .titulo{
     font-size: 30px;
@@ -43,6 +43,9 @@
 }
 .lista{
     font-size: 18px;
+}
+.h4-title{
+    margin-top: 5rem;
 }
 .form_box{
     margin: auto;
@@ -57,26 +60,7 @@
     width: 7rem;
     border-color: 	#25D366;
     color: #075E54;
-    border-radius: 2rem;
-    
-}
-.div_country{
-    height: auto;
-    margin-right: 1rem;  
-}
-#country_number{
-    height: 3rem;
-    width: 2rem;
-    min-width: 125px;
-}
-.div_ddd{
-    height: auto;
-    margin-right: 1rem;
-}
-#DDD{
-    height: 3rem;
-    width: 1rem;
-    min-width: 45px;
+    border-radius: 2rem;  
 }
 .div_phone{
     margin-right: 1rem;
@@ -84,6 +68,7 @@
 #phone_number{
     height: 3rem;
     min-width: 100px;
+    border-color: 	#25D366;
 }
 form{
     width: auto;
