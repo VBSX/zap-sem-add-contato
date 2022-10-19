@@ -1,0 +1,135 @@
+.body{
+    background-color: #F5f5f5;
+}
+.cabecalho{
+    width: 100%;
+    background-color: #128C7E;
+    position: sticky;
+    top: 0;
+}
+.cabecalho-titulo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; 
+    justify-content: center;
+}
+.h1-cabecalho{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+}
+.img-whats{
+    height: 100px;
+
+}
+.center_div{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 0 auto;
+} 
+.main-title{
+    max-width: 50%;
+    min-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+.titulo{
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.lista{
+    font-size: 18px;
+}
+.form_box{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height: 3rem;
+}
+#submit{
+    height: 3rem;
+    width: 7rem;
+    border-color: 	#25D366;
+    color: #075E54;
+    border-radius: 2rem;
+    
+}
+.div_country{
+    height: auto;
+    margin-right: 1rem;  
+}
+#country_number{
+    height: 3rem;
+    width: 2rem;
+    min-width: 125px;
+}
+.div_ddd{
+    height: auto;
+    margin-right: 1rem;
+}
+#DDD{
+    height: 3rem;
+    width: 1rem;
+    min-width: 45px;
+}
+.div_phone{
+    margin-right: 1rem;
+}
+#phone_number{
+    height: 3rem;
+    min-width: 100px;
+}
+form{
+    width: auto;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+.div_error{
+    max-width: 50%;
+    min-width: 50%;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+.err_text{
+    margin: 0 auto;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.adsense-display{
+    max-width: 50%;
+    min-width: 50%;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+
+} 
+.adsense-in-article{
+    min-width: 1%;
+    width: auto;
+    padding: 30px;
+}
+.image-git{
+    color: #25D366;
+    height: 32px;
+    font-weight: bold;
+    margin: 32px;
+}
+
+@media (pointer: coarse) {
+    /* usado para equpamentos que usam o dedo */
+    }
+
+
+@media (pointer: fine) {
+    /* usado para equipamentos que usam mouse */
+}
