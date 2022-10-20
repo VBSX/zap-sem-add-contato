@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemain.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -21,12 +21,24 @@
 <body class="body">
 <header class="cabecalho">
     <div class="cabecalho-titulo">
-        <img src="images/whatsapp.png" alt="whats" class="img-whats">
+        <a href="index.php">
+        <img src="images/whatsapp.png"  alt="whats" class="img-whats">
+        </a>
         <div class="h1-cabecalho">
+        <a href="index.php">
         <h1 class="h1-cabecalho">
             Zap Sem Adicionar Contato
         </h1>
+        </a>
         </div>
+        <div class="buttons-header" >
+            <a href="about.php" class="header-about" id="about" >
+                        Sobre
+            </a>
+            <a href="about.php" class="header-about" >
+                        Contato
+            </a> 
+    </div>
     </div>
 </header>
 <div class="center_div">
@@ -118,20 +130,21 @@
             data-ad-format="auto"
             data-adtest="on" 
             data-full-width-responsive="true"></ins>
-    
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+    <div class="container-news">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta deserunt eius ipsa autem, nesciunt nam commodi enim esse, velit veniam pariatur dolorem natus possimus magni assumenda suscipit minima, unde molestiae?</p>
+    </div>
     </div>
     <footer>
-
         <div>
             <div class="image-git">
-                <a href="github.com/vbsx" class="image-git">
-                    <img src="images/github.png" alt="git" class="image-git">
+                <img src="images/github.png" alt="git" class="image-git">
+                    <a href="https://www.github.com/vbsx/" class="image-git" target="_blank">
                     More Projects >
-                </a>
+                    </a>
             </div>
         </div>
     </footer>
