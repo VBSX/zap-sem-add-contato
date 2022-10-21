@@ -16,6 +16,7 @@
         header("Cache-Control: post-check=0, pre-check=0", false);
         header("Pragma: no-cache");
     ?>
+    <link rel="icon" type="image/x-icon" href="images/whatsapp.png">
     <title>Zap Sem Add Sem Contato</title>
 </head>
 <body class="body">
@@ -33,10 +34,10 @@
         </div>
         <div class="buttons-header" >
             <a href="about.php" class="header-about" id="about" >
-                        Sobre
+                        <!-- Sobre -->
             </a>
             <a href="about.php" class="header-about" >
-                        Contato
+                        <!-- Contato -->
             </a> 
     </div>
     </div>
@@ -58,7 +59,7 @@
                 style="display:block; text-align:center; background-color: #f5f5f5"
                 data-ad-layout="in-article"
                 data-ad-format="fluid"
-                data-adtest="on" 
+                data-adtest="on"
                 data-ad-client="ca-pub-1319169190566423"
                 data-ad-slot="8266209775"></ins>
             <script>
@@ -112,7 +113,7 @@
         {   
             $message = "&text=Olá estou usando o Whatsapp";
             $link = "{$whats}+55{$cellphone}{$message}";
-            echo $link;
+            // echo $link;
             header("Location: $link");
             exit();
         }
@@ -135,7 +136,7 @@
         </script>
     </div>
     <div class="container-news">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta deserunt eius ipsa autem, nesciunt nam commodi enim esse, velit veniam pariatur dolorem natus possimus magni assumenda suscipit minima, unde molestiae?</p>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta deserunt eius ipsa autem, nesciunt nam commodi enim esse, velit veniam pariatur dolorem natus possimus magni assumenda suscipit minima, unde molestiae?</p> -->
     </div>
     </div>
     <footer>

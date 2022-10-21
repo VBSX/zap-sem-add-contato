@@ -137,9 +137,9 @@ form{
 }
 .container-news{
     background-color: #6c7070;
-    height: 6rem;
     width: 30vw;
     margin: 0 auto;
+    height: auto;
 }
 @media (pointer: coarse) {
     /* usado para equpamentos que usam o dedo */
