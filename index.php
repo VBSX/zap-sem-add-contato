@@ -59,7 +59,6 @@
                 style="display:block; text-align:center; background-color: #f5f5f5"
                 data-ad-layout="in-article"
                 data-ad-format="fluid"
-                data-adtest="on"
                 data-ad-client="ca-pub-1319169190566423"
                 data-ad-slot="8266209775"></ins>
             <script>
@@ -113,7 +112,6 @@
         {   
             $message = "&text=Olá estou usando o Whatsapp";
             $link = "{$whats}+55{$cellphone}{$message}";
-            // echo $link;
             header("Location: $link");
             exit();
         }
@@ -129,7 +127,6 @@
             data-ad-client="ca-pub-1319169190566423"
             data-ad-slot="4392212241"
             data-ad-format="auto"
-            data-adtest="on" 
             data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
