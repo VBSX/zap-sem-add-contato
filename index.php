@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     
@@ -6,13 +6,11 @@
     require_once "head.php";
     $titulo_da_pagina = "Zap Sem Add Sem Contato";
     new Head($titulo_da_pagina);
-
     ?>
 </head>
 <body class="body">
     <header class="cabecalho">
-        <?php 
-        new Header();
+        <?php new Header();
         
         ?>
         </div>
@@ -88,11 +86,13 @@
         {   
             $message = "&text=Olá estou usando o Whatsapp";
             $link = "{$whats}+55{$cellphone}{$message}";
-            header("Location: $link");
-            exit();
+            echo "<script>
+            window.open('$link',' _blank')
+            </script>";
+            // window.open('$link', '_blank')
+            // exit(header("Location: $link"));
         }
-    }
-        ?>
+    }?>
     </div> 
     <div class="adsense-display">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1319169190566423"
