@@ -94,10 +94,10 @@
             </div>
             ";
             
-            // echo "<script>
-            // window.open('$link',' _blank')
+            echo "<script>
+            window.open('$link',' _blank')
             
-            // </script>";
+            </script>";
 
             // window.open('$link', '_blank')
             // exit(header("Location: $link"));
