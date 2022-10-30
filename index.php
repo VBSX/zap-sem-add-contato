@@ -70,7 +70,8 @@
     </form>
     <div class="div_error">
         <?php
-        $whats = "https://web.whatsapp.com/send?phone=";
+        // $whats = "https://web.whatsapp.com/send?phone=+55";
+        $whats ="https://api.whatsapp.com/send?1=pt_BR&phone=+55";
         
         if(array_key_exists("phone_number", $_POST)) 
         {
@@ -85,10 +86,19 @@
         else
         {   
             $message = "&text=Olá estou usando o Whatsapp";
-            $link = "{$whats}+55{$cellphone}{$message}";
-            echo "<script>
-            window.open('$link',' _blank')
-            </script>";
+            $link = "{$whats}{$cellphone}{$message}";
+            echo"
+            <div class='popup'>
+                <p >Caso o Whatsapp não abra automaticamente desative o seu pop up ou clique neste </p>
+                <a href='$link' target='_blank' id='link'> Link</a>
+            </div>
+            ";
+            
+            // echo "<script>
+            // window.open('$link',' _blank')
+            
+            // </script>";
+
             // window.open('$link', '_blank')
             // exit(header("Location: $link"));
         }

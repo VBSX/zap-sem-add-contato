@@ -23,6 +23,16 @@
     flex-wrap: wrap;
     
 }
+.popup{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#link{
+    margin-left: 1rem;
+}
 .img-whats{
     height: 100px;
 
