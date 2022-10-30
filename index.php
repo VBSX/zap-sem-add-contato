@@ -122,13 +122,15 @@
     <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta deserunt eius ipsa autem, nesciunt nam commodi enim esse, velit veniam pariatur dolorem natus possimus magni assumenda suscipit minima, unde molestiae?</p> -->
     </div>
     </div>
-    <footer>
+    <footer style="margin:0 auto;">
         <div>
             <div class="image-git">
                 <img src="images/github.png" alt="git" class="image-git">
                     <a href="https://www.github.com/vbsx/" class="image-git" target="_blank">
                     More Projects >
                     </a>
+                
+                    <p class="image-git">Copyright ©<?php echo date("Y"); ?> zapsemadd.com.br - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>

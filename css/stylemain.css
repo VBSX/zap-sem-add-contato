@@ -145,6 +145,11 @@ form{
     height: 32px;
     font-weight: bold;
     margin: 32px;
+
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .container-news{
     background-color: #6c7070;
