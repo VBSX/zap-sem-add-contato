@@ -26,12 +26,12 @@
 .popup{
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 0.5rem;
+
     display: flex;
     flex-wrap: wrap;
 }
 #link{
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 .img-whats{
     height: 100px;
@@ -92,13 +92,21 @@
     justify-content: center;
     height: 3rem;
 }
-#submit{
+.submit{
     height: 3rem;
     width: 7rem;
     border-color: 	#25D366;
     color: #075E54;
     border-radius: 2rem;  
 }
+.buttonswhats{
+    height: 3rem;
+    width: 7rem;
+    border-color: 	#25D366;
+    color: #075E54;
+    border-radius: 2rem;  
+}
+
 .div_phone{
     margin-right: 1rem;
 }
@@ -157,9 +165,16 @@ form{
     margin: 0 auto;
     height: auto;
 }
+
 @media (pointer: coarse) {
     /* usado para equpamentos que usam o dedo */
+    .cabecalho{
+        width: 100%;
+        background-color: #128C7E;
+        position: relative;
     }
+    }
+
 
 
 @media (pointer: fine) {

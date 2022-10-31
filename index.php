@@ -63,14 +63,14 @@
             <input type="tel" name="phone_number" id="phone_number" placeholder="(00) 0000-0000"><br>
             </div>
             <div class="div_submit">
-                <input type="submit" id="submit">
+                <input type="submit" class="submit">
             </div>
         </div>
         
     </form>
     <div class="div_error">
         <?php
-        // $whats = "https://web.whatsapp.com/send?phone=+55";
+        $whatsweb = "https://web.whatsapp.com/send?phone=+55";
         $whats ="https://api.whatsapp.com/send?1=pt_BR&phone=+55";
         
         if(array_key_exists("phone_number", $_POST)) 
@@ -85,19 +85,36 @@
       
         else
         {   
+
             $message = "&text=Olá estou usando o Whatsapp";
             $link = "{$whats}{$cellphone}{$message}";
+            $linkweb = "{$whatsweb}{$cellphone}{$message}";
+            
             echo"
+            <div>
+                <p>
+                    Abrir no    
+                    <a href='$linkweb' class='buttonswhats' target='_blank'> Aplicativo do Whatsapp</a>
+                </p>
+                <p>
+                    Abrir no    
+                    <a href='$linkweb' class='buttonswhats' target='_blank'>Whatsapp web</a>
+                </p>
+            </div>
             <div class='popup'>
-                <p >Caso o Whatsapp não abra automaticamente desative o seu pop up ou clique neste </p>
-                <a href='$link' target='_blank' id='link'> Link</a>
+ 
+                <div class='popup'>
+                    <p>Caso o Whatsapp não abra automaticamente desative o seu pop up ou clique neste </p>
+                        <a href='$link' target='_blank' id='link'> Link</a>
+                    </p>
+                </div>
             </div>
             ";
             
-            echo "<script>
-            window.open('$link',' _blank')
+            // echo "<script>
+            // window.open('$link',' _blank')
             
-            </script>";
+            // </script>";
 
             // window.open('$link', '_blank')
             // exit(header("Location: $link"));
@@ -122,8 +139,8 @@
     <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta deserunt eius ipsa autem, nesciunt nam commodi enim esse, velit veniam pariatur dolorem natus possimus magni assumenda suscipit minima, unde molestiae?</p> -->
     </div>
     </div>
-    <footer style="margin:0 auto;">
-        <div>
+    <footer>
+        <div style="margin-bottom:50px;">
             <div class="image-git">
                 <img src="images/github.png" alt="git" class="image-git">
                     <a href="https://www.github.com/vbsx/" class="image-git" target="_blank">
