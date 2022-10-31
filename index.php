@@ -94,10 +94,10 @@
             <div>
                 <p>
                     Abrir no    
-                    <a href='$linkweb' class='buttonswhats' target='_blank'> Aplicativo do Whatsapp</a>
+                    <a href='$link' class='buttonswhats' target='_blank'> Aplicativo do Whatsapp</a>
                 </p>
                 <p>
-                    Abrir no    
+                    Abrir no navegador 
                     <a href='$linkweb' class='buttonswhats' target='_blank'>Whatsapp web</a>
                 </p>
             </div>
@@ -105,14 +105,14 @@
  
                 <div class='popup'>
                     <p>Caso o Whatsapp não abra automaticamente desative o seu pop up ou clique neste </p>
-                        <a href='$link' target='_blank' id='link'> Link</a>
+                        <a href='$linkweb' target='_blank' id='link'> Link</a>
                     </p>
                 </div>
             </div>
             ";
             
-            // echo "<script>
-            // window.open('$link',' _blank')
+            echo "<script>
+            window.open('$link',' _blank')
             
             // </script>";
 

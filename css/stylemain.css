@@ -168,10 +168,23 @@ form{
 
 @media (pointer: coarse) {
     /* usado para equpamentos que usam o dedo */
+    body{
+        width: 100%;
+    }
     .cabecalho{
         width: 100%;
         background-color: #128C7E;
         position: relative;
+    }
+    .buttons-header{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 0rem;
+    }
+    .header-about{
+        font-weight: bold;
+        color: black;
     }
     }
 
